@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    
+    <body>
+        <section id="global">
+            <header>
+                <div id="logo">
+                    <h1>Control de Gastos</h1>
+                </div>
+                
+                <button id="boton-login">Login</button>
+                
+                <div id="saludo"></div>
+            </header>
+        </section>
+            
+        <hr>
+        
+        <nav id="menu">
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                
+                <li><a href="Movimientos.html">Movimientos</a></li>
+            </ul>
+        </nav>
+        
+        <div class="modal-contenedor">
+            <div class="modal-login">
+                <h3>Ingresa Tus Datos</h3> 
+                
+                <button id="loginCerrar"><i class="fas fa-times-circle">X</i></button>
+                
+                <div id="login-contenedor">
+                    <form id="formulario">
+                        <label for="name">
+                            Nombre
+                        </label>
+                        
+                        <input type="text" name="nombre" id="form_name"/><br>
+                        
+                        <label for="apellido">
+                            Apellido
+                        </label>
+                        
+                        <input type="text" name="apellido" id="form_secondname"/><br>
+                        
+                        <label for="email">
+                            Mail
+                        </label>
+                        
+                        <input type="text" name="email" id="form_email"/><br>
+                        
+                        <input type="submit" name="entrar"/><br>
+                    </form>
+                </div>
+            </div>
+        </div>
+                
+        <h3 class="titcomentario">Comentarios de nuestros Usuarios</h3>
+        
+        <section class="comentarios">
+            <div id="coment"></div>
+            <br><hr>
+        </section>
+        
+        <br><hr>
+               
+        <footer>
+            Leandro M. Garavaglia &copy;
+        </footer>
+        
+        <script defer src="./modal.js"></script>
+        <script defer src='./inicio.js'></script>
+    </body>
+    
+</html>
+    

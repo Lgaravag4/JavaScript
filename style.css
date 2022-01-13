@@ -1,0 +1,274 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+#global{
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 25px;
+    box-shadow: 0px 0px 2px gray;
+    background: url("img/1.jpg");
+}
+
+body{
+    background: white;
+    margin: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+
+}
+
+#menu{
+    font-family: Arial, Helvetica, sans-serif;
+    background: olive;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#menu ul{
+    line-height: 46px;
+    list-style: none;
+}
+
+#menu ul li{
+    height: 46px;
+    display: inline-block;
+    transition: all 300ms;
+}
+
+#menu a{
+    display: block;
+    color: white;
+    text-decoration:none;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+#logo{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 4px;
+    line-height: 75px;
+    color: black;
+
+}
+
+#login h4{
+    padding: 20px;
+    text-align: center;
+}
+
+#login{
+    font-family: Arial, Helvetica, sans-serif;
+    background: blanchedalmond;
+    width: 50%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 25%;
+    display: inline-block;
+    text-align: left;    
+}
+
+form label{
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+form input[type="text"]{
+    padding: 5px;
+    border-radius: 2px;
+    border:1px solid #ccc ;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+form input[type="submit"]{
+    background: royalblue;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 47px;
+    background: rgba(51, 51, 51, 0.70);
+    margin: 0px auto;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+}
+
+#boton-login {
+    color: rgb(2, 36, 138);
+    font-size: 30px;
+    background-color: transparent;
+    border-radius: 100%;
+    padding: 10px 20px;
+    transition: all .3s;
+    
+}
+
+
+#boton-login:hover{
+    cursor: pointer;
+    color: white;
+    background-color: royalblue;
+}
+
+#boton-login:focus{
+    outline: none;
+}
+
+#saludo{
+    border: 1px;
+    color: black;
+    font-size: 30px;
+    background-color: transparent;
+    padding: 10px 20px;
+    text-align: left;
+    
+}
+
+.modal-contenedor{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-login{
+    position: relative;
+    background-color: white;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+}
+
+.modal-active .modal-login{
+    margin-top: 0;
+}
+
+.modal-login h3{
+    color: royalblue;
+    padding-bottom: 5px;
+}
+
+.modal-login #loginCerrar{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: royalblue;
+    border: none;
+    background-color: white;
+}
+
+.modal-login #loginCerrar:hover{
+    cursor: pointer;
+}
+
+.modal-login #loginCerrar:focus{
+    outline: none;
+}
+
+.i{
+    display: none;
+}
+
+.e{
+    display: none;
+}
+.iv{
+    display: none;
+}
+
+.comentarios{
+    font-family: sans-serif; 
+    font-size: 18px; 
+    font-weight: 400px; 
+    color: #ffffff; 
+    background:#247e08;
+    width: 90%;
+    margin: auto;
+}
+
+.titcomentario{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+    font-weight: 400px; 
+    color: #000000; 
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#datos{
+    text-align: center;
+}
+
+form label[for="tipo"]{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container{
+    margin:4px;
+    padding:4px;
+    background-color: rgb(229, 233, 229);
+    width: 500px;
+    height: 110px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+    float: left;
+}
+
+.container1{
+    margin:4px;
+    padding:4px;
+    background-color: rgb(229, 233, 229);
+    width: 500px;
+    height: 110px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+    float:right;
+}
+.cont{
+    width: 90%;
+}

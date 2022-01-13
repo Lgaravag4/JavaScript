@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/moment.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.0/locale/es.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="./style.css" type="text/css"/>
+    </head>
+    
+    <body>
+        
+        <section id="global">
+            <header>
+                <div id="logo">
+                    <h1>Control de Gastos</h1>
+                </div>
+                               
+            </header>
+        </section>
+        
+        <hr>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Movimientos.html">Movimientos</a></li>
+            </ul>
+        </nav>
+           
+        <div>
+            <form id="datos">
+                <label for="tipo">Ingrese tipo de movimiento</label><br>
+                <label><input type="radio" id='cbox' name='tipo' value='ing'/>Ingresos</label><br>
+                <label><input type="radio" id='cbox1' name='tipo' value='egr'/>Egresos</label><br>
+                <input type="submit" name="mostrar"/><br>
+            </form>
+        </div>
+        
+        <form class="i" id="ingreso">
+            <div>
+                <label for="tipo">Ingresos</label><br>
+                <label for="start">Ingrese Fecha:</label>
+                <input type="date" id="Fechaing" name="fecha-mov" value="2021-01-01"/><br>
+                <label>Ingrese Importe: <input type="number" id="importesi"/></label><br>
+                <input type="submit" name="guardar"/><br>
+            </div>
+        </form>
+            
+        <form class="e" id="egreso">
+            <div>
+                <label for="tipo">Egresos</label><br>
+                <label for="start">Ingrese Fecha:</label>
+                <input type="date" id="Fechaeg" name="fecha-mov" value="2021-01-01"><br>
+                <label>Ingrese Importe: <input type="number" id="importese"/></label><br>
+                <input type="submit" name="guardar"/><br>
+            </div>
+        </form>
+        
+        <section class="cont">
+            <div class="container">
+                <h3>Ingreso Mayor</h3>
+                <div id="movm"></div>
+            </div>
+            
+            <div class="container1">
+                <h3>Resultado</h3>
+                <div id="mov"></div>
+            </div>
+            
+            <div class="container">
+                <h3>Todos los Ingresos</h3>
+                <div id="moving"></div>
+            </div>
+                            
+            <div class="container1">
+                <h3>Todos los Egresos</h3>
+                <div id="movegr"></div>
+            </div>
+        
+        </section>
+        
+        <canvas id="chart"></canvas>
+            
+        <footer>
+            Leandro M. Garavaglia &copy;
+        </footer>
+
+        <script defer src='app.js'></script>
+            
+    </body>
+        
+</html>
+        
